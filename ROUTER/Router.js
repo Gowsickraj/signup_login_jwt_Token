@@ -1,7 +1,8 @@
-const {controls} = require("../Function/controls")
+const Postmethod = require("../Controls/Postmethod")
 
-const names = require("express").Router()
+const router = require("express").Router()
 
-names.get("/api/method")
+router.route("/postmethod").post(Postmethod);
 
-module.exports = names
+
+module.exports = router
